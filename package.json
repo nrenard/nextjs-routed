@@ -1,0 +1,19 @@
+{
+  "name": "nextjs-routed",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "next": "^8.1.0",
+    "next-routes": "^1.4.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.1"
+  }
+}
