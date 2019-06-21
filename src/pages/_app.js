@@ -5,7 +5,7 @@ import Header from "../components/Header";
 
 import GlobalStyle from "../styles/global";
 
-const MyApp = ({ Component, pageProps }) => (
+const App = ({ Component, pageProps }) => (
   <Container>
     <GlobalStyle />
 
@@ -15,16 +15,14 @@ const MyApp = ({ Component, pageProps }) => (
   </Container>
 );
 
-MyApp.getInitialProps = async ({ Component, ctx }) => {
+App.getInitialProps = async ({ Component, ctx }) => {
   let pageProps = {};
 
   if (Component.getInitialProps) {
     pageProps = await Component.getInitialProps(ctx);
   }
 
-  console.log("second");
-
   return { pageProps };
 };
 
-export default MyApp;
+export default App;
